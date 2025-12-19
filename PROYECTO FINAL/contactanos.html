@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPUCAM</title>
+    <link rel="icon" type="image/png" href="imagenes/logo.ico"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <Style>
+        body {
+            background: #f7fda5;
+            color: #000000;
+        }
+        .navbar-brand {
+         font-weight: bold;
+         color: #181515;
+        } 
+        .nav-link {
+         color: #ffffff;
+         font-weight: bold;
+        }
+                
+        header {
+            background: #ffffff;
+            color: rgb(179, 36, 36);
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            color: #004c99;
+            margin-top: 40px;
+        }
+        .contact-box {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        button {
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #004c99;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+        }
+        .social a {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+
+
+
+
+
+
+
+    </Style>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(253, 2, 2);">
+        <div class="container">
+            <a class="navbar-brand" href="#">COMPUCAM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">HISTORIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html"> PRODUCTOS</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contactanos.html"> CONTACTANOS</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+       <header>
+        <h1>COMPUCAM</h1>
+        <h3>Formas de Contacto</h3>
+    </header>
+
+    <div class="container">
+
+        <h2>Formulario de Contacto</h2>
+        <div class="contact-box">
+            <form>
+                <label>Nombre Completo:</label>
+                <input type="text" placeholder="Escribe tu nombre" required>
+
+                <label>Correo Electrónico:</label>
+                <input type="email" placeholder="correo@ejemplo.com" required>
+
+                <label>Mensaje:</label>
+                <textarea rows="5" placeholder="Escribe tu mensaje" required></textarea>
+
+                <button href="mailto:jorgeandresbalderramabalderas@gmail.com" type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+
+        <h2>Información Directa</h2>
+        <div class="grid">
+            <div class="contact-box">
+                <h3>Teléfonos</h3>
+                <p><strong>Administración:</strong> 733-50311</p>
+                <p><strong>Secretaría:</strong> 733-50311</p>
+            </div>
+
+            <div class="contact-box">
+                <h3>Correo Institucional</h3>
+                <p>contacto@luciosiles.edu</p>
+                <p>direccion@luciosiles.edu</p>
+            </div>
+
+            <div class="contact-box">
+                <h3>Redes Sociales</h3>
+                <div class="social">
+                    <a href="#">Facebook</a>
+                    <a href="whatsapp://send?phone=+59173350311">WhatsApp</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+
+        <h2>Ubicación</h2>
+        <div class="contact-box map-container">
+            <iframe src="https://www.google.com/maps?q=-17.7833,-63.1821&hl=es&z=15&output=embed" allowfullscreen=""></iframe>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+<footer class="bg-light text-center text-lg-start">
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2024 COMPUCAM. Todos los derechos reservados.
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
